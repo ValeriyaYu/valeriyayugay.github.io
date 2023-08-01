@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/713dba114c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo1.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Data Analyst</p>
+            <h1>Hi, my name is<br><span>Valeriya</span></h1>
+        </div>
+    </div>
+</div>
+
+<!-- ---------------about----------------- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> Hey there! I'm Valeriya, an engineering student based in South Korea with a passion for data analytics! You can usually find me reading fantasy books or diving into video game quests when I'm not crunching numbers. Let's connect and explore the exciting world of data together! 🚀📊🎮</p>
+
+                <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>SQL</span><br>SQL Server</li>
+                        <li><span>Python</span><br>Pandas, NumPy, SciPy, MatPlotLib</li>
+                        <li><span>Data Visualization Tools</span><br>Tableau, Power BI</li>
+                        <li><span>Excel</span><br>VLookup, Conditional Formatting, Pivot Tables</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>September 2021 - present</span><br>Bachelor at Pusan National University<br>Aerospace Engineering</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------------portfolio-------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list" id="workList">
+            <div class="work">
+                <img src="work-1.jpg">
+                <div class="layer">
+                    <h3>Amazon Sentiment Analysis</h3>
+                    <p>Web scraping reviews on my favorite book and classifying customer reviews</p>
+                    <a href="https://github.com/ValeriyaYu/PythonProjects/blob/main/FavoriteBook%20WebScraped%20Data%20Sentiment%20Analysis.ipynb" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.jpg">
+                <div class="layer">
+                    <h3>Customer Segmentation</h3>
+                    <p>Dividing a mall customer base into distinct groups for better marketing strategies using K-means Clustering</p>
+                    <a href="https://www.kaggle.com/code/valeriyayugay/customersegmentation-k-meansclustering" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.jpg">
+                <div class="layer">
+                    <h3>Covid Data Exploration</h3>
+                    <p>Exploring Covid-19 data in SQL to understand it's impact on different countries</p>
+                    <a href="https://github.com/ValeriyaYu/SQLProjects/blob/main/Project1.sql" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work hidden">
+                <img src="work-4.jpg">
+                <div class="layer">
+                    <h3>Data Cleaning in SQL</h3>
+                    <p>Cleaning Nashville housing prices data</p>
+                    <a href="https://github.com/ValeriyaYu/SQLProjects/blob/main/DataCleaning.sql" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work hidden">
+                <img src="work-5.jpg">
+                <div class="layer">
+                    <h3>Game Sales EDA</h3>
+                    <p>The primary focus of this project is to perform an exploratory data analysis (EDA) on a dataset related to PC game sales and to create visualizations</p>
+                    <a href="https://www.kaggle.com/code/valeriyayugay/eda-pc-games-sales" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work hidden">
+                <img src="tableau.jpg">
+                <div class="layer">
+                    <h3>Tableau Projects</h3>
+                    <p>My data visualization projects in Tableau</p>
+                    <a href="https://public.tableau.com/app/profile/valeriya.yugay" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work hidden">
+                <img src="work-6.jpg">
+                <div class="layer">
+                    <h3>Data Cleaning and Visualization for Olympic Games in Python</h3>
+                    <p>I am interested in gaining insights and understanding various aspects of the historical Olympic Games dataset</p>
+                    <a href="https://www.kaggle.com/code/valeriyayugay/datacleaning-and-visualization-for-olympic-games" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn" id="seeMoreBtn">See more</a>
+    </div>
+</div>
+
+<!-- ------------contact---------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>valerya13yu@gmail.com</p>
+                <p><i class="fa-solid fa-mobile-screen-button"></i>+82 10-6492-6301</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/valeriyayugay/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/l.v.yu_/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.kaggle.com/valeriyayugay" target="_blank"><i class="fa-brands fa-kaggle"></i></a>
+                    <a href="https://github.com/ValeriyaYu" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="Valeriya_Yugay_Data_Analyst_CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright Kevin. Made by Easy Tutorials</p>
+    </div>
+</div>
+
+
+<script>
+    const workList = document.getElementById('workList');
+    const seeMoreBtn = document.getElementById('seeMoreBtn');
+    const hiddenWorks = workList.querySelectorAll('.work.hidden');
+    const portfolioSection = document.getElementById('portfolio');
+    let showMore = false;
+
+    // Function to toggle the visibility of hidden work items
+    function toggleHiddenWorks(event) {
+        event.preventDefault(); // Prevent the default behavior of the button
+
+        hiddenWorks.forEach(work => {
+            work.style.display = showMore ? 'none' : 'block';
+        });
+        showMore = !showMore;
+        seeMoreBtn.textContent = showMore ? 'See less' : 'See more';
+
+        if (!showMore) {
+            // Scroll to the beginning of the portfolio section when showing less items
+            portfolioSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
+    // Event listener for the "See more" button
+    seeMoreBtn.addEventListener('click', toggleHiddenWorks);
+</script>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxXY8EYpLrt3mvbF-oRpAMrNVDdVsXr5DPYEtDxJdfEHU3BZNeXyHt-KyKFMboDUkY/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
